@@ -1,16 +1,7 @@
 from bs4 import BeautifulSoup
 
 def extract_group_names_from_aria_label(html_content):
-    """
-    Extracts group names from HTML content by parsing the 'aria-label' attribute
-    of <a> tags within specific <div> structures.
 
-    Args:
-        html_content (str): The HTML content to parse.
-
-    Returns:
-        list: A list of group names extracted from the HTML.
-    """
     soup = BeautifulSoup(html_content, 'html.parser')
     group_names = []
 
